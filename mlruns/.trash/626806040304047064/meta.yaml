@@ -1,0 +1,7 @@
+artifact_location: mlflow-artifacts:/626806040304047064
+creation_time: 1685307643503
+experiment_id: '626806040304047064'
+last_update_time: 1685307684612
+lifecycle_stage: deleted
+name: Kedro_test_2
+tags: {}

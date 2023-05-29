@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/lasiadhi/Downloads/kedro-test/mlruns/956291239236526418/b63da897f4ec417aa1c89e73883425f6/artifacts
+end_time: 1685241564299
+entry_point_name: ''
+experiment_id: '956291239236526418'
+lifecycle_stage: active
+run_id: b63da897f4ec417aa1c89e73883425f6
+run_name: my_model
+run_uuid: b63da897f4ec417aa1c89e73883425f6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685241564219
+status: 3
+tags: []
+user_id: lasiadhi
