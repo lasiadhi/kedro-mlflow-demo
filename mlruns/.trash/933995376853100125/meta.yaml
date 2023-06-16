@@ -1,0 +1,7 @@
+artifact_location: file:///Users/ladhikari/Downloads/kedro-test/mlruns/933995376853100125
+creation_time: 1686627694870
+experiment_id: '933995376853100125'
+last_update_time: 1686674740402
+lifecycle_stage: deleted
+name: LR_CV_model_updated
+tags: {}

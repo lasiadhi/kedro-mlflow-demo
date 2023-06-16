@@ -46,25 +46,25 @@ example_iris_data:
   type: pandas.CSVDataSet
   filepath: data/01_raw/iris.csv
 
-# for mlflow tracking
-example_model:
-  type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
-  data_set:
-    type: pickle.PickleDataSet
-    filepath: data/06_models/trained_model.pkl
-
-confusion_matrix_mlf:
-  type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
-  data_set:
-    type: matplotlib.MatplotlibWriter
-    filepath: data/09_tracking/confusion_matrix_mlf.png
-
-# for Kedro exp/metrics traking
-metrics:
-  type: tracking.MetricsDataSet
-  filepath: data/09_tracking/metrics.json
+trained_model: # simple example without compression
+  type: pickle.PickleDataSet
+  filepath: data/06_models/trained_model.pkl
+  backend: pickle
 
 confusion_matrix:
   type: matplotlib.MatplotlibWriter
-  filepath: data/09_tracking/confusion_matrix.png
-  versioned: true
+  filepath: data/08_reporting/confusion_matrix.png
+  save_args:
+    format: png
+
+#trained_model:
+#  type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+#  data_set:
+#    type: pickle.PickleDataSet
+#    filepath: data/06_models/trained_model.pkl
+
+#confusion_matrix:
+#  type: kedro_mlflow.io.artifacts.MlflowArtifactDataSet
+#  data_set:
+#    type: matplotlib.MatplotlibWriter
+#    filepath: data/08_reporting/confusion_matrix.png

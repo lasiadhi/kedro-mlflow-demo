@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/ladhikari/Downloads/kedro-test/mlruns/110186617820412932/b31b542288b84d6dbac0801210b1c6e9/artifacts
+deleted_time: 1686715524909
+end_time: 1686713918713
+entry_point_name: ''
+experiment_id: '110186617820412932'
+lifecycle_stage: deleted
+run_id: b31b542288b84d6dbac0801210b1c6e9
+run_name: run_0
+run_uuid: b31b542288b84d6dbac0801210b1c6e9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1686713912477
+status: 3
+tags: []
+user_id: ladhikari
