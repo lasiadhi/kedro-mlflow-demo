@@ -19,6 +19,7 @@ data/**
 
 # also keep the example dataset
 !data/01_raw/*.csv
+!data/08_reporting/**
 
 
 ##########################
