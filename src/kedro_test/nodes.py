@@ -112,14 +112,14 @@ def report_accuracy(y_pred: pd.Series, y_test: pd.Series):
 
     mlflow.log_metric("accuracy", accuracy)
     mlflow.log_param("time of prediction", str(datetime.now()))
-    mlflow.set_tag("Model type", "only_with_vitals")
+    mlflow.set_tag("Model type", "only 4 features")
 
 def create_confusion_matrix(y_pred: pd.Series, y_test: pd.Series):
-    """_summary_
+    """create confusion matrix
 
     Args:
-        y_pred (pd.Series): _description_
-        y_test (pd.Series): _description_
+        y_pred (pd.Series): predicted y values
+        y_test (pd.Series): true y values
     """
     confusion_matrix = pd.crosstab(
         y_test, y_pred, rownames=["Actual"], colnames=["Predicted"]
